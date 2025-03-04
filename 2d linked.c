@@ -99,12 +99,12 @@ link2 *insert_pos(int data,int pos)
     else
     {
         curr=start;
-        while(i<pos && curr->next!=NULL)
+        while(i<pos-1 && curr->next!=NULL)
         {
             curr=curr->next;
             i++;
         }
-        if(i==pos)
+        if(i==pos-1)
         {
             if(curr->next==NULL)
             {
